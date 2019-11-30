@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Giết hoặc bị Vương Zombie Thịt">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Vương IT">
+    <meta property="og:title" content="Giết hoặc bị Vương Zombie Thịt">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="Game Zombie">
+    <meta name="twitter:title" content="Giết hoặc bị Vương Zombie Thịt">
+    <title>Giết hoặc bị Vương Zombie Thịt</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="apple-touch-icon.png">
+    <link rel="stylesheet" href="/bower_components/tootik/css/tootik.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+    <div id="canves" data-wave="" class="loading intro">
+      <div class="loader"><div class="loading-char"><div class="zombie-loader"></div><span>Đang tải cưng ơi</span></div></div>
+      <div class="game-cover"></div>
+      <div class="overlay-screen">
+        <h2 class="big-title game-over-title">Thua rùi cưng <div>! Chơi lại đi nha</div></h2>
+        <h2 class="big-title end-game-title">Ghê dữ bây <div>! Vương xin bái làm sư phụ</div></h2>
+        <span class="restart-hint">Nhấn vô dây nè để reset lại á!</span>
+        <h2 class="big-title game-pause-title">Dừng</h2>
+        <h2 class="big-title level-title">Level <span></span></h2>
+      </div>
+      <ul class="info-board">
+        <li class="killed-status"><span>0</span></li>
+        <li class="life"><i class="heart-icon"></i><i class="heart-icon"></i><i class="heart-icon"></i></li>
+        <li id="mute-music" data-tootik="Mute Music" data-tootik-conf="right invert"></li>
+        <li id="mute-sounds" data-tootik="Mute Sounds" data-tootik-conf="right invert"></li>
+      </ul>
+      <div id="pause-game"></div>
+      <div class="ammo" data-ammo="6"><span class="reload-key">R</span></div>
+      <div class="reload-hint"><div class="reload-trigger"></div></div>
+    </div>
+
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/SoundJS/lib/soundjs-0.6.2.combined.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
